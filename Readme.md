@@ -94,7 +94,7 @@ pending tasks with selected tags will remain visible (and their notes and projec
         </table>
 
     - relative period of time starts with a plus sign or two
-      __`+[+][number][DdWw][h:m]`__ — number is optional as well as letter `d` for days or letter `w` for weeks.
+      __`+[+][number][DdWw][h:m]`__ — number is optional as well as letter `d` for days or letter `w` for weeks.
 
         <table>
          <tr>
@@ -324,4 +324,4 @@ You can contribute on [github](https://github.com/aziz/PlainTasks)
 - Thanks to [TaskPaper Mac application from hogbaysoftware.com](http://www.hogbaysoftware.com/products/taskpaper)
 
 ## License
-Copyright 2012-2013 [Allen Bargi](https://twitter.com/aziz). Licensed under the MIT License
+Copyright 2012-2013 [Allen Bargi](https://twitter.com/aziz). Licensed under the MIT License this is a test
