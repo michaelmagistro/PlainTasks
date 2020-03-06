@@ -9,17 +9,17 @@ scope: text.todo
 contexts:
   main:
     - match: '^(?=.*w\[.*\]).*$'
-          scope: wait
-        - match: '^\s*[-\*\[ \] ]*\s*(?=\d\d-\d\d-\d\d)(?!.*\d\d:\d\d.?$).*|^\s*[-\*]*\s*\d\d-\d\d-\d\d \d\d:\d\d\s?$'
-          scope: date
-        - match: '^\s*(<jj\s.*?>)(.*$)'
-          captures:
-            1: keyword.marker
-            2: markerdesc
-          push:
-            - meta_scope: markernotes
-            - match: '</end>'
-              pop: true
+      scope: wait
+    - match: '^\s*[-\*\[ \] ]*\s*(?=\d\d-\d\d-\d\d)(?!.*\d\d:\d\d.?$).*|^\s*[-\*]*\s*\d\d-\d\d-\d\d \d\d:\d\d\s?$'
+      scope: date
+    - match: '^\s*(<jj.*?>)(.*$)'
+      captures:
+        1: keyword.marker
+        2: punctuation.definition.bold
+      push:
+        - meta_scope: punctuation.definition.italic
+        - match: '</>'
+          pop: true
     - match: '^\s*(\#?\s?\w+.*?:\s*?(\@[^\s]+(\(.*?\))?\s*?)*$\n?)'
       scope: keyword.control.header.todo
     - match: '^\s*(?:(\+|✓|✔|☑|√|\[x\])(\s+(?:[^\@\n]|(?<!\s)\@|\@(?=\s))*)([^\n]*))|^\s*(?:(-)(\s+(?:[^\@]|(?<!\s)\@|\@(?=\s))*)(.*\@done(?=\s|\(|$)[^\n]*))'
