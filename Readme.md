@@ -1,3 +1,14 @@
+## Michael's Modified PlainTasks Repo
+
+This fork contains some modifications to Aziz's wonderful PlainTasks Repo.
+
+Some changes are:
+
+* brighter comments
+* brighter bold & italic highlighting
+* added w[] modifier to tasks (which allows you to see if a task is waiting on something to be completed)
+* added <jj project description> more description </> snippet. You can embed this in large projects so you can see a description of the project and if you use a descriptive name you can jump directly to a point in the project and see a nice description all in the same action.
+
 ## [PlainTasks](https://github.com/aziz/PlainTasks)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8d42f3e49d104ab8bf663392661b183b)](https://www.codacy.com/app/allen-bargi/PlainTasks?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aziz/PlainTasks&amp;utm_campaign=Badge_Grade)
 
