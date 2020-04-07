@@ -587,7 +587,8 @@
 				<string>#000000</string>
 				<!-- <string>#0067CE</string> -->
 				<key>background</key>
-				<string>#545454</string>
+				<string>#333333</string>
+				<!-- <string>#545454</string> -->
 				<key>fontStyle</key>
 				<string>bold underline</string>
 			</dict>
@@ -715,6 +716,7 @@
 			<dict>
 				<key>foreground</key>
 				<string>#065DEA</string>
+				<!-- <string>#1670c9</string> old version brighter? -->
 			</dict>
 		</dict>
 		<dict>
