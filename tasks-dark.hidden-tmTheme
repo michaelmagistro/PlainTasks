@@ -578,6 +578,22 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Keyword</string>
+			<key>scope</key>
+			<string>keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000000</string>
+				<!-- <string>#0067CE</string> -->
+				<key>background</key>
+				<string>#545454</string>
+				<key>fontStyle</key>
+				<string>bold underline</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Marker</string>
 			<key>scope</key>
 			<string>keyword.marker</string>
