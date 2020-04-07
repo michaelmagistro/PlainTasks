@@ -584,7 +584,33 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ff00ff</string>
+				<string>#ff6500</string>
+				<key>background</key>
+				<string>#050505</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Marker Detail</string>
+			<key>scope</key>
+			<string>todo.markerdetail</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff6500</string>
+				<key>background</key>
+				<string>#050505</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Marker Comment</string>
+			<key>scope</key>
+			<string>todo.markercomment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffa500</string>
 				<key>background</key>
 				<string>#050505</string>
 			</dict>
@@ -672,7 +698,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#1670c9</string>
+				<string>#065DEA</string>
 			</dict>
 		</dict>
 		<dict>
@@ -683,7 +709,20 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#404040</string>
+				<string>#55391d</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Danger</string>
+			<key>scope</key>
+			<string>todo.danger</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#ff0000</string>
 			</dict>
 		</dict>
 	</array>

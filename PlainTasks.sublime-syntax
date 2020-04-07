@@ -15,9 +15,9 @@ contexts:
     - match: '^\s*(<jj.*?>)(.*$)'
       captures:
         1: keyword.marker
-        2: punctuation.definition.bold
+        2: todo.markerdetail
       push:
-        - meta_scope: punctuation.definition.italic
+        - meta_scope: todo.markercomment
         - match: '</>'
           pop: true
     - match: '^\s*(\#?\s?\w+.*?:\s*?(\@[^\s]+(\(.*?\))?\s*?)*$\n?)'
@@ -49,6 +49,7 @@ contexts:
         - include: bold
         - include: url
         - include: information
+        - include: danger
     - match: '^\s*(-|❍|❑|■|□|☐|▪|▫|–|—|≡|→|›|\[\s\])(?=(\s+(?:[^\@\n]|(?<![ \t])\@)*)(?!([^\n]*)?(\@done|\@cancelled)[\s\(]))'
       captures:
         1: punctuation.definition.bullet.pending.todo
@@ -62,6 +63,7 @@ contexts:
         - include: bold
         - include: url
         - include: information
+        - include: danger
         - include: tag
         - include: today
         - include: low
@@ -98,7 +100,7 @@ contexts:
             1: punctuation.definition.italic
           pop: true
   information:
-    - match: '(?<=\s|^)(~|_)(?=\S)(?=(\1\1|(?!(?<=\S)\1).)++(?<=\S)\1)(?=[^\n]+(?<=\S)(\1)(?!\1|[\w\d]))'
+    - match: '(?<=\s|^)(~)(?=\S)(?=(\1\1|(?!(?<=\S)\1).)++(?<=\S)\1)(?=[^\n]+(?<=\S)(\1)(?!\1|[\w\d]))'
       captures:
         1: punctuation.definition.information
       push:
@@ -106,6 +108,16 @@ contexts:
         - match: '(?<=\S)(\1)(?!\1|[\w\d])'
           captures:
             1: punctuation.definition.information
+          pop: true
+  danger:
+    - match: '(?<=\s|^)(!)(?=\S)(?=(\1\1|(?!(?<=\S)\1).)++(?<=\S)\1)(?=[^\n]+(?<=\S)(\1)(?!\1|[\w\d]))'
+      captures:
+        1: punctuation.definition.danger
+      push:
+        - meta_scope: todo.danger
+        - match: '(?<=\S)(\1)(?!\1|[\w\d])'
+          captures:
+            1: punctuation.definition.danger
           pop: true
   low:
     - match: (?<=\s)\@low|✭low
