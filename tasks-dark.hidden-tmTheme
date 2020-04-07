@@ -675,6 +675,17 @@
 				<string>#1670c9</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>Information</string>
+			<key>scope</key>
+			<string>todo.information</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#404040</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>FE674D9A-27B3-4A5A-84F7-1CC67BD29531</string>
