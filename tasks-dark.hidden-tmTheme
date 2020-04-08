@@ -614,7 +614,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ff6500</string>
+				<string>#FF00FF</string>
 				<key>background</key>
 				<string>#050505</string>
 			</dict>
@@ -627,7 +627,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#cc00cc</string>
+				<string>#cc0066</string>
 				<!-- <string>#ffa500</string> -->
 				<key>background</key>
 				<string>#050505</string>
