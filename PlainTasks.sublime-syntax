@@ -18,6 +18,11 @@ contexts:
         2: todo.markerdetail
       push:
         - meta_scope: todo.markercomment
+        - include: italic
+        - include: bold
+        - include: url
+        - include: information
+        - include: danger
         - match: '</>'
           pop: true
     - match: '^\s*(\#?\s?\w+.*?:\s*?(\@[^\s]+(\(.*?\))?\s*?)*$\n?)'
@@ -69,6 +74,7 @@ contexts:
         - include: low
         - include: high
         - include: critical
+        - include: issue
     - match: ^＿+$
       scope: meta.punctuation.archive.todo
     - match: '^\s*---.{3,5}---+$'
@@ -86,6 +92,9 @@ contexts:
   critical:
     - match: (?<=\s)\@critical|✭critical
       scope: string.other.tag.todo.critical
+  issue:
+    - match: (?<=\s)\@issue|✭issue
+      scope: string.other.tag.todo.issue
   high:
     - match: (?<=\s)\@high|✭high
       scope: string.other.tag.todo.high
@@ -123,7 +132,7 @@ contexts:
     - match: (?<=\s)\@low|✭low
       scope: string.other.tag.todo.low
   tag:
-    - match: '(?<=\s)\@(?!(high|today|critical|low|completed|done)[\s\(])[\w\d\.\(\)\-!? :\+]+[ \t]*'
+    - match: '(?<=\s)\@(?!(high|today|critical|low|completed|done|issue)[\s\(])[\w\d\.\(\)\-!? :\+]+[ \t]*'
       scope: meta.tag.todo
   today:
     - match: (?<=\s)\@today|✭ᴛᴏᴅᴀʏ

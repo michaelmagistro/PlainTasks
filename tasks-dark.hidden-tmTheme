@@ -584,10 +584,10 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#0099cc</string>
 				<!-- <string>#0067CE</string> -->
 				<key>background</key>
-				<string>#333333</string>
+				<string>#222222</string>
 				<!-- <string>#545454</string> -->
 				<key>fontStyle</key>
 				<string>bold underline</string>
@@ -601,7 +601,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ff6500</string>
+				<string>#FF00FF</string>
 				<key>background</key>
 				<string>#050505</string>
 			</dict>
@@ -627,7 +627,8 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffa500</string>
+				<string>#cc00cc</string>
+				<!-- <string>#ffa500</string> -->
 				<key>background</key>
 				<string>#050505</string>
 			</dict>
@@ -741,6 +742,21 @@
 				<string>bold</string>
 				<key>foreground</key>
 				<string>#ff0000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Issue</string>
+			<key>scope</key>
+			<string>string.other.tag.todo.issue</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#ff3300</string>
+				<key>foreground</key>
+				<string>#000000</string>
+				<key>fontStyle</key>
+				<string>bold</string>
 			</dict>
 		</dict>
 	</array>
